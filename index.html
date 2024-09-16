@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour of dom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <h1>welcome to my dom</h1>
+    </header>
+    <main id="main-content">
+    <h1>amr awsome 
+         sakib khan
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, itaque reiciendis voluptates voluptatum repudiandae illum! Sed accusamus iure, quis consequatur iste provident corporis minus vitae praesentium, ipsam nobis excepturi similique?</p>
+    <p>ami yeamin ekdin valo hobo nahole ami mara gele jannat e jete parbo na </p>
+  <section>
+    <ul>
+        <li class="sumi">Surma</li>
+        <li>turma</li>
+        <li>kulma</li>
+        <li>vulma</li>
+    </ul>
+  </section>
+  <section class="fruites-propartics" >
+    <h1 id="fruits-title" class="yeamin sakib sagor">fruits</h1>
+    <ul >
+        <li>apple </li>
+        <li>mango </li>
+        <li>orange </li>
+        <li>banana </li>
+    </ul>
+  </section>
+  <section id="places-container" class="largest-text">
+    <h1>pleaces i like to visited</h1>
+    <ul id="places-list">
+        <li>swiden</li>
+        <li>grece</li>
+        <li>saudi</li>
+        <li>iran</li>
+    </ul>
+  </section>
+    </main>
+
+    <footer>
+
+    </footer>
+     <script src="dom.js"></script>
+     <script src="styleInJs.js"></script>
+     <script src="append.js"></script>
+   <script>
+    
+    const liCollection = document.getElementsByTagName('li');
+    // console.log(liCollection);
+
+    for (const li of liCollection){
+        // console.log(li.innerText);
+    }
+    const h1Heading = document.getElementsByTagName('h1');
+    for(const h1 of h1Heading){
+        // console.log(h1.innerText)
+    }
+    const fruitesLike = document.querySelectorAll(".fruites-propartics li");
+    // console.log(fruitesLike)
+    for(const fruiteLike of fruitesLike){ 
+        // console.log(fruiteLike.innerText  )
+    }
+    </script>
+
+</body>
+</html>
